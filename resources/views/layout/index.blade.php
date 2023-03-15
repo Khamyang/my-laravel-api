@@ -20,7 +20,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{asset('admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
-  <link rel="stylesheet" href="{{asset("toastr.min.css")}}">
+  <link rel="stylesheet" href="{{asset('toastr.min.css')}}">
 
 </head>
 <body class="hold-transition sidebar-mini">
@@ -210,13 +210,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{{asset('admin/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
 <script src="{{asset('admin/plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
 
-<script src="{{asset("toastr.min.js")}}"></script>
-<script type="text/javascript">
+<script src="{{asset('toastr.min.js')}}"></script>
+<!-- <script type="text/javascript">
   @if(Session::has('success'))
       toastr.options.positionClass = 'toast-bottom-right';
-      toastr.success("{{Session::get('success') }}")
+      toastr.success("{{Session::get('success') }}");
   @endif
-</script>
+</script> -->
 
 <script>
   $(function () {

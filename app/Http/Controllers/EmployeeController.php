@@ -14,7 +14,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        $emp = Employee::all();
+        $emp = Employee::where('del',1)->get();
         return view('employee.index', compact('emp'));
     }
 
